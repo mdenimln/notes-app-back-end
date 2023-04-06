@@ -2,8 +2,6 @@
 const { nanoid } = require('nanoid');
 const notes = require('./notes');
 
-// eslint-disable-next-line consistent-return
-// menambah notes
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
 
